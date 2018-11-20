@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLQ-Aj-43j">
+                                <rect key="frame" x="0.0" y="30" width="375" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qe-jf-yrV" userLabel="Picker View From">
+                                <rect key="frame" x="10" y="117" width="355" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4W3-9W-PBV"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="From currency:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCQ-Kz-xlP">
+                                <rect key="frame" x="0.0" y="82.5" width="375" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="To currency:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yb-Uo-z0V">
+                                <rect key="frame" x="0.0" y="297" width="375" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="efj-JE-Htq" userLabel="Stack View From">
+                                <rect key="frame" x="10" y="501.5" width="355" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-kt-N2d">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="u4H-oZ-GOK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUY-D8-Gu1" userLabel="From amount">
+                                        <rect key="frame" x="150" y="0.0" width="205" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TdE-Ra-fIY" userLabel="Stack View To">
+                                <rect key="frame" x="10" y="551.5" width="355" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnI-Pf-yk7">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="cHx-0e-7yA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-yT-N2N" userLabel="To amount">
+                                        <rect key="frame" x="150" y="0.0" width="205" height="30"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC1-EZ-UXe">
+                                <rect key="frame" x="137.5" y="601.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4y4-Jo-wJ8"/>
+                                    <constraint firstAttribute="height" constant="50" id="XXu-7I-eqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tmz-Jk-TNA"/>
+                                </connections>
+                            </button>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-bL-CPC" userLabel="Picker View To">
+                                <rect key="frame" x="10" y="331.5" width="355" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="h0o-xX-MbH"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9212072491645813" green="0.84832113981246948" blue="0.62377804517745972" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="efj-JE-Htq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rv-vC-nBR"/>
+                            <constraint firstItem="6qe-jf-yrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xC-mJ-ggW"/>
+                            <constraint firstItem="ZC1-EZ-UXe" firstAttribute="top" secondItem="TdE-Ra-fIY" secondAttribute="bottom" constant="20" id="9dO-Ih-lcS"/>
+                            <constraint firstItem="0Yb-Uo-z0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9s1-gd-fug"/>
+                            <constraint firstItem="TdE-Ra-fIY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Clu-Zx-SSQ"/>
+                            <constraint firstItem="ZC1-EZ-UXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FC1-Lb-sIM"/>
+                            <constraint firstItem="6qe-jf-yrV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Gaw-ol-9zd"/>
+                            <constraint firstItem="mLQ-Aj-43j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Gjb-Q5-oPB"/>
+                            <constraint firstItem="mCQ-Kz-xlP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J0g-AO-pop"/>
+                            <constraint firstItem="efj-JE-Htq" firstAttribute="top" secondItem="q8G-bL-CPC" secondAttribute="bottom" constant="10" id="O1P-kp-g3D"/>
+                            <constraint firstItem="0Yb-Uo-z0V" firstAttribute="top" secondItem="6qe-jf-yrV" secondAttribute="bottom" constant="20" id="OrG-JU-TlE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TdE-Ra-fIY" secondAttribute="trailing" constant="10" id="RXS-oZ-tDO"/>
+                            <constraint firstItem="q8G-bL-CPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WlG-go-0S9"/>
+                            <constraint firstItem="q8G-bL-CPC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="Xm4-iu-y7d"/>
+                            <constraint firstItem="6qe-jf-yrV" firstAttribute="top" secondItem="mCQ-Kz-xlP" secondAttribute="bottom" constant="10" id="Y7R-5a-hCp"/>
+                            <constraint firstItem="mCQ-Kz-xlP" firstAttribute="top" secondItem="mLQ-Aj-43j" secondAttribute="bottom" constant="20" id="YWO-dg-2Xv"/>
+                            <constraint firstItem="mLQ-Aj-43j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cnD-Cz-5Am"/>
+                            <constraint firstItem="efj-JE-Htq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dnB-Ol-R8X"/>
+                            <constraint firstItem="TdE-Ra-fIY" firstAttribute="top" secondItem="efj-JE-Htq" secondAttribute="bottom" constant="20" id="glw-cr-Jwm"/>
+                            <constraint firstItem="q8G-bL-CPC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9R-U1-l3M"/>
+                            <constraint firstItem="q8G-bL-CPC" firstAttribute="top" secondItem="0Yb-Uo-z0V" secondAttribute="bottom" constant="10" id="klf-VK-718"/>
+                            <constraint firstItem="0Yb-Uo-z0V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sOE-Qq-Pfw"/>
+                            <constraint firstItem="mCQ-Kz-xlP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tA5-9e-6h8"/>
+                            <constraint firstItem="6qe-jf-yrV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="xcN-77-Wab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mLQ-Aj-43j" secondAttribute="trailing" id="yVC-2F-4A6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fromCurrencyPickerView" destination="6qe-jf-yrV" id="sTv-dg-jjc"/>
+                        <outlet property="tfFromAmount" destination="ZUY-D8-Gu1" id="frS-gm-wtS"/>
+                        <outlet property="tfToAmount" destination="lcS-yT-N2N" id="BnW-af-57y"/>
+                        <outlet property="toCurrencyPickerView" destination="q8G-bL-CPC" id="EHZ-Oy-9NO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
